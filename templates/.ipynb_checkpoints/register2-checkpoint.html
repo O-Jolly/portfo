@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <form method="GET"> <!-- form use GET but you can aloso use POST (hidden) / action="action.php"-->
+        Frist Name:<input type="text" name="firstname"><br> <!-- name as property and "firstname" as value -->
+        Last Name:<input type="text" name="lastname"><br>
+        Email:<input type="email" name="email" required><br>
+        Birthday:<input type="date" name="birthday"><br>
+        Password:<input type="password" name="password" minlength="5"><br> 
+        Gender:<br>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        Pets:<br>
+        <input type="checkbox" name="cats">Cats<br>
+        <input type="checkbox" name="dogs">Dogs<br>
+        Cars:<br>
+        <select name="cars"> <!-- you can add multiple next to select if you want to select multiple things -->
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+        </select><br> 
+        <input type="submit" value="Register!"><br>
+        <input type="reset">
+    </form>
+</body>
+</html>
+
